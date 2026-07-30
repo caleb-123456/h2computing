@@ -1,0 +1,9 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS `People` (
+	`PersonID`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	`FullName`	TEXT,
+	`DateofBirth`	TEXT,
+	`ScreenName`	TEXT,
+	`IsAdult`	INTEGER
+);
+COMMIT;
