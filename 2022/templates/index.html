@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Books Not Yet Returned</title>
+</head>
+
+<body>
+
+<h1>Books Not Yet Returned</h1>
+
+<table border = "1">
+
+	<tr>
+		<th>Family Name</th>
+		<th>Given Name</th>
+		<th>Book Title</th>
+	</tr>
+	
+	{% for row in results %}
+	<tr>
+		<td>{{ row[0] }}</td>
+		<td>{{ row[1] }}</td>
+		<td>{{ row[2] }}</td>
+	</tr>
+	{% endfor %}
+	
+</table>
+	
+</body>
+</html>
